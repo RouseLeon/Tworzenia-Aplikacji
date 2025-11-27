@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid zachorowania</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <form id="filterForm">
+        <label for="country">Kraj:</label>
+        <select id="country">
+            <option value="Poland">Polska</option>
+            <option value="Germany">Niemcy</option>
+            <option value="France">Francja</option>
+            <option value="Italy">Włochy</option>
+        </select>
+
+        <label for="startDate">Data początkowa:</label>
+        <input type="date" id="startDate" value="2020-01-01">
+
+        <label for="endDate">Data końcowa:</label>
+        <input type="date" id="endDate" value="2020-12-31">
+
+        <button type="submit">Pokaż</button>
+    </form>
+
+    <canvas id="covidChart" width="800" height="400"></canvas>
+
+</body>
+</html>
